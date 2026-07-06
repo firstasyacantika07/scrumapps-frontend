@@ -11,7 +11,7 @@ const GitHubStatusCard = ({ project, integrationData, refreshData }) => {
   const [msg, setMsg] = useState({ text: "", type: "" });
 
   // Ikon
-  const GithubIcon = Lucide.Github || Lucide.GitBranch;
+  const GithubIcon = Lucide.GitBranch;
   const { CheckCircle2, Clock, RefreshCw, AlertCircle, ExternalLink } = Lucide;
 
   const userData = JSON.parse(localStorage.getItem("user") || "{}");
