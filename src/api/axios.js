@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
-  timeout: 10000, // Tambahan opsional: timeout 10 detik agar UI tidak hang jika server overload
+  timeout: 30000, // Timeout 30 detik agar cukup waktu menunggu TiDB Serverless bangun dari sleep
 });
 
 // ======================================================
